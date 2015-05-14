@@ -1,15 +1,15 @@
 @import "../bower_components/normalize-scss/_normalize.scss";
 @import "../bower_components/typeplate-starter-kit/css/_typeplate.scss";
 @import "./mixins.scss";
-
 /**
  * BOX-SIZING
  */
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: border-box;
 }
-
 /**
  * GRIDS
  */
@@ -20,7 +20,6 @@
     font-size: 0;
     text-align: justify;
     position: relative;
-
     & > * {
         font-size: medium;
         text-align: left;
@@ -28,7 +27,6 @@
         width: 100%;
         vertical-align: top;
     }
-
     &:after {
         display: inline-block;
         width: 100%;
@@ -39,7 +37,6 @@
 
 @include gridify(2, 400);
 @include gridify(4, 600);
-
 /**
  * PACE (automatic pre-loader thingy)
  */
@@ -68,13 +65,79 @@
     height: 2px;
     transition: all 1s ease;
 }
-
 /**
  * GENERAL
  */
 
-img {max-width:100%;}
-
+img {
+    max-width: 100%;
+}
 /**
  * YOUR CODE HERE
  */
+
+label {
+    color: white;
+    float: left;
+    margin-left: -200px;
+    margin-top: -200px;
+}
+
+span {
+    color: grey;
+}
+
+h6 {
+    position: relative;
+    color: white;
+}
+
+h5 {
+    color: white;
+    text-align: left;
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
+p {
+    text-align: left;
+    color: white;
+}
+
+p.canon {
+    color: red;
+    font-size: 140%;
+}
+
+.container {
+    padding: 200px;
+    background: #2C3539;
+    margin: 0 auto;
+    width: 800px;
+}
+
+.image {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+label {
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
+header.img {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    padding: 50px;
+    height: 150px;
+}
+
+body {
+    background-position: center;
+    text-align: center;
+    background-size: cover;
+}
